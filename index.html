@@ -17,6 +17,28 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Cantora+One&family=Concert+One&family=Exo:ital,wght@0,100..900;1,100..900&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    <!--
+Code copied from: [https://www.w3schools.com/cssref/css3_pr_border-radius.php]
+Author: W3Schools
+Name: border-radius
+Description: Use of border radius in creating accents and elements to the background
+Date retrieved: December 9, 2024
+-->
+    <!--
+Code copied from: [https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-text-stroke]
+Author: MDN
+Name: -web-kit-text-stroke
+Description: CSS short hand of stroke colour for text
+Date retrieved: December 9, 2024
+-->
+    <!--
+Code copied from: [https://www.w3schools.com/css/css3_flexbox.asp]
+Author: W3Schools
+Name: CSS Flex-box
+Description: Used for positioning elements 
+Date retrieved: December 9, 2024
+-->
   </head>
 
 
@@ -69,8 +91,8 @@
       padding-left: 20px;
       margin-right: auto;
     }
-    
-    .name a{
+
+    .name a {
       color: white;
       text-decoration: none;
     }
@@ -93,32 +115,12 @@
     }
 
 
+    /*page name: Illustration*/
 
-    .illustration .overlap {
-      position: absolute;
-      width: 1529px;
-      height: 805px;
-      top: 0;
-      left: 0;
-    }
-
-    .illustration .group {
-      width: 1529px;
-      height: 683px;
-      left: 0;
-      position: absolute;
-      top: 0;
-    }
-
-    .illustration .overlap-group {
-      position: relative;
-      width: 1527px;
-      height: 683px;
-    }
 
     .illustration .rectangle {
       position: absolute;
-      width: 1527px;
+      width: 100vw;
       height: 613px;
       top: 0;
       left: 0;
@@ -139,6 +141,7 @@
       line-height: normal;
     }
 
+    /*top section: Youthfull days*/
     .illustration .star {
       position: absolute;
       width: 332px;
@@ -159,37 +162,6 @@
       letter-spacing: 0;
       line-height: normal;
       white-space: nowrap;
-    }
-
-    /*emoji section*/
-    .illustration .frame-2 {
-      gap: 29px;
-      top: 4892px;
-      left: 128px;
-      display: inline-flex;
-      align-items: center;
-      position: absolute;
-    }
-
-    .illustration .img-love {
-      position: relative;
-      width: 375px;
-      height: 375px;
-      object-fit: cover;
-    }
-    
-    .illustration .img-sus {
-      position: relative;
-      width: 375px;
-      height: 375px;
-      object-fit: cover;
-    }
-    
-    .illustration .img-shocked {
-      position: relative;
-      width: 375px;
-      height: 375px;
-      object-fit: cover;
     }
 
     .illustration .overlap-2 {
@@ -216,7 +188,7 @@
       width: 845px;
       top: 40px;
       left: 326px;
-      font-family: "Cantora One-Regular", Helvetica;
+      font-family: "Cantora One", sans-serif;
       font-weight: 400;
       color: #000000;
       font-size: 96px;
@@ -230,7 +202,7 @@
       width: 799px;
       top: 183px;
       left: 364px;
-      font-family: "Cabin-Regular", Helvetica;
+      font-family: "Cabin-Regular", sans-serif;
       font-weight: 400;
       color: #000000;
       font-size: 36px;
@@ -239,6 +211,7 @@
       line-height: normal;
     }
 
+    /*mid section: Lust*/
     .illustration .overlap-3 {
       position: absolute;
       width: 1831px;
@@ -246,15 +219,7 @@
       top: 2698px;
       left: -398px;
     }
-
-    .illustration .star-2 {
-      position: absolute;
-      width: 193px;
-      height: 193px;
-      top: 13px;
-      left: 1638px;
-    }
-
+    
     .illustration .rectangle-2 {
       position: absolute;
       width: 1746px;
@@ -262,8 +227,7 @@
       top: 0;
       left: 0;
       background-color: #004759;
-      border-radius: 500px 0px 0px 0px;
-      transform: rotate(180deg);
+      border-radius: 0px 500px 0px 0px;
     }
 
     .illustration .IMG-2 {
@@ -280,7 +244,7 @@
       width: 397px;
       top: 66px;
       left: 490px;
-      font-family: "Cantora One-Regular", Helvetica;
+      font-family: "Cantora One", sans-serif;
       font-weight: 400;
       color: #ffffff;
       font-size: 96px;
@@ -293,7 +257,7 @@
       width: 853px;
       top: 247px;
       left: 498px;
-      font-family: "Cabin-SemiBold", Helvetica;
+      font-family: "Cabin-Regular", sans-serif;
       font-weight: 400;
       color: #ffffff;
       font-size: 36px;
@@ -306,9 +270,19 @@
     }
 
     .illustration .text-wrapper-5 {
-      font-family: "Cabin-Regular", Helvetica;
+      font-family: "Cabin-Regular", sans-serif;
     }
 
+    .illustration .star-2 {
+      position: absolute;
+      width: 193px;
+      height: 193px;
+      top: 13px;
+      left: 1638px;
+    }
+
+
+    /*emoji section*/
     .illustration .overlap-4 {
       position: absolute;
       width: 1440px;
@@ -316,7 +290,7 @@
       top: 4575px;
       left: 15px;
     }
-
+    
     .illustration .group-2 {
       width: 1072px;
       height: 187px;
@@ -326,13 +300,43 @@
       position: absolute;
       top: 0;
     }
+    
+    .illustration .frame-2 {
+      gap: 29px;
+      top: 4892px;
+      left: 128px;
+      display: inline-flex;
+      align-items: center;
+      position: absolute;
+    }
 
+    .illustration .img-love {
+      position: relative;
+      width: 375px;
+      height: 375px;
+      object-fit: cover;
+    }
+
+    .illustration .img-sus {
+      position: relative;
+      width: 375px;
+      height: 375px;
+      object-fit: cover;
+    }
+
+    .illustration .img-shocked {
+      position: relative;
+      width: 375px;
+      height: 375px;
+      object-fit: cover;
+    }
+    
     .illustration .text-wrapper-6 {
       position: absolute;
       width: 1440px;
       top: 29px;
       left: 0;
-      font-family: "Cantora One-Regular", Helvetica;
+      font-family: "Cantora One", sans-serif;
       font-weight: 400;
       color: #000000;
       font-size: 96px;
@@ -340,7 +344,50 @@
       letter-spacing: 0;
       line-height: normal;
     }
+    
+    .illustration .text-wrapper-7 {
+      position: absolute;
+      width: 375px;
+      top: 5296px;
+      left: 128px;
+      font-family: "Cabin-Regular", sans-serif;
+      font-weight: 400;
+      color: #000000;
+      font-size: 36px;
+      text-align: center;
+      letter-spacing: 0;
+      line-height: normal;
+    }
 
+    .illustration .text-wrapper-8 {
+      position: absolute;
+      width: 375px;
+      top: 5292px;
+      left: 532px;
+      font-family: "Cabin-Regular", sans-serif;
+      font-weight: 400;
+      color: #000000;
+      font-size: 36px;
+      text-align: center;
+      letter-spacing: 0;
+      line-height: normal;
+    }
+
+    .illustration .text-wrapper-9 {
+      position: absolute;
+      width: 375px;
+      top: 5288px;
+      left: 936px;
+      font-family: "Cabin-Regular", sans-serif;
+      font-weight: 400;
+      color: #000000;
+      font-size: 36px;
+      text-align: center;
+      letter-spacing: 0;
+      line-height: normal;
+    }
+
+    /*footer*/
     .illustration .rectangle-3 {
       position: absolute;
       width: 1582px;
@@ -350,64 +397,17 @@
       background-color: #004759;
     }
 
-    .illustration .text-wrapper-10 {
-      position: absolute;
-      width: 375px;
-      top: 5296px;
-      left: 128px;
-      font-family: "Cabin-Regular", Helvetica;
-      font-weight: 400;
-      color: #000000;
-      font-size: 36px;
-      text-align: center;
-      letter-spacing: 0;
-      line-height: normal;
-    }
-
-    .illustration .text-wrapper-11 {
-      position: absolute;
-      width: 375px;
-      top: 5292px;
-      left: 532px;
-      font-family: "Cabin-Regular", Helvetica;
-      font-weight: 400;
-      color: #000000;
-      font-size: 36px;
-      text-align: center;
-      letter-spacing: 0;
-      line-height: normal;
-    }
-
-    .illustration .text-wrapper-12 {
-      position: absolute;
-      width: 375px;
-      top: 5288px;
-      left: 936px;
-      font-family: "Cabin-Regular", Helvetica;
-      font-weight: 400;
-      color: #000000;
-      font-size: 36px;
-      text-align: center;
-      letter-spacing: 0;
-      line-height: normal;
-    }
   </style>
 
   <body>
     <div class="illustration">
       <div class="div">
+        <div class="rectangle"></div>
+        <div class="text-wrapper">Illustration</div>
+        <img class="star" src="Star 2 (1).png" alt="large orange star icon">
+        <div class="text-wrapper-2">02</div>
 
-          <div class="group">
-            <div class="overlap-group">
-              <div class="rectangle"></div>
-              <div class="text-wrapper">Illustration</div>
-            </div>
-          </div>
-        
-          <img class="star" src="Star 2 (1).png" alt="large orange star icon">
-          <div class="text-wrapper-2">02</div>
-        
-        
+
         <div class="overlap-2">
           <img class="IMG" src="IMG_7170 1.png" alt="colourful illustration of spirit bears opening jar of childhood">
           <div class="text-wrapper-3">Youthful Days</div>
@@ -417,38 +417,39 @@
             we leave it to our imaginary spirits who keep them safe.
           </p>
         </div>
-        
+
         <div class="overlap-3">
-          <img class="star-2" src="Star 7.png" alt="small orange star icon">
           <div class="rectangle-2"></div>
+          <img class="star-2" src="Star 7.png" alt="small orange star icon">
           <img class="IMG-2" src="IMG_0277.JPG" alt="illustration depicting a motify of lust">
           <div class="text-wrapper-4">Lust</div>
           <p class="seven-deadly-sins-as">
-            <span class="span">Seven Deadly Sins<br/></span>
+            <span class="span"><i>Seven Deadly Sins</i></span>
             <span class="text-wrapper-5">As the danger of lust can lead to dangerous or non-consensual situations. Human emotions can be
               manipulated and taken advantage of because of the lack of morality of others. Like a lifeless puppet
               attached to strings.</span>
           </p>
         </div>
-        
+
         <div class="overlap-4">
           <div class="group-2"></div>
           <div class="text-wrapper-6">Expressions of ME!</div>
         </div>
-        
+
         <div class="frame-2">
           <img class="img-love" src="Emoji-_In_Love.png" alt="emoji depicting of me in love with bubble tea">
           <img class="img-sus" src="IMG_0651.PNG" alt="emoji depicting of me a mastermind with suspicious ideas">
           <img class="img-shocked" src="Emoji-_Shocked.png" alt="emoji depicting of me being shocked">
         </div>
+
+        <div class="text-wrapper-7">Loving</div>
+        <div class="text-wrapper-8">Suspicious</div>
+        <div class="text-wrapper-9">Shocked</div>
         
         <div class="rectangle-3"></div>
-        <div class="text-wrapper-10">Loving</div>
-        <div class="text-wrapper-11">Suspicious</div>
-        <div class="text-wrapper-12">Shocked</div>
       </div>
     </div>
-    
+
     <!--Header-->
     <div class="header">
       <div class="name">
