@@ -5,541 +5,463 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Website: Portfolio</title>
     <!-- Created by Tiffany Lu on November 25, 2024-->
-    
+
     <!--Google font embed-->
-    
+
     <!--Font for body text-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Concert+One&family=Exo:ital,wght@0,100..900;1,100..900&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-    
+
     <!--Font for headers-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Cantora+One&family=Concert+One&family=Exo:ital,wght@0,100..900;1,100..900&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
   </head>
-  
-  
+
+
   <style>
-    body{
+    body {
       margin: 0;
     }
+
+    .illustration {
+      background-color: #fff9f1;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .illustration .div {
+      background-color: #fff9f1;
+      overflow: hidden;
+      width: 1440px;
+      height: 6109px;
+      position: relative;
+    }
+
+
+    /*header*/
+    .header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #004759;
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+      font-family: "Cantora One", sans-serif;
+    }
+
+    .star-icon {
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      top: 14px;
+      left: 14px;
+    }
+
+    .name {
+      display: absolute;
+      align-items: center;
+      font-size: 24px;
+      padding-left: 20px;
+      margin-right: auto;
+    }
     
-   .illustration {
-  background-color: #fff9f1;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 100%;
-}
+    .name a{
+      color: white;
+      text-decoration: none;
+    }
 
-.illustration .div {
-  background-color: #fff9f1;
-  overflow: hidden;
-  width: 1440px;
-  height: 6599px;
-  position: relative;
-}
+    .links {
+      display: flex;
+      gap: 20px;
+      padding-right: 60px;
+    }
+
+    .links a {
+      font-family: "Cabin", sans-serif;
+      font-size: 18px;
+      color: white;
+      text-decoration: none;
+    }
+
+    .links a:hover {
+      color: #fda959;
+    }
 
 
- 
-/*header*/    
-  .header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #004759;
-    display: flex;
-    align-items: center;
-    padding: 10px 20px;
-    font-family: "Cantora One", sans-serif;
-}
-  .desktop .star {
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    top: 14px;
-    left: 14px;
-  }
 
-  .name {
-    display: absolute;
-    align-items: center;
-    font-size: 24px;
-    color: white;
-    padding-left: 20px;
-    margin-right: auto;
-  } 
+    .illustration .overlap {
+      position: absolute;
+      width: 1529px;
+      height: 805px;
+      top: 0;
+      left: 0;
+    }
+
+    .illustration .group {
+      width: 1529px;
+      height: 683px;
+      left: 0;
+      position: absolute;
+      top: 0;
+    }
+
+    .illustration .overlap-group {
+      position: relative;
+      width: 1527px;
+      height: 683px;
+    }
+
+    .illustration .rectangle {
+      position: absolute;
+      width: 1527px;
+      height: 613px;
+      top: 0;
+      left: 0;
+      background-color: #070d12;
+    }
+
+    .illustration .text-wrapper {
+      position: absolute;
+      width: 1440px;
+      top: 271px;
+      left: 0;
+      font-family: "Cantora One", sans-serif;
+      font-weight: 400;
+      color: #ffffff;
+      font-size: 128px;
+      text-align: center;
+      letter-spacing: 0;
+      line-height: normal;
+    }
+
+    .illustration .star {
+      position: absolute;
+      width: 332px;
+      height: 332px;
+      top: 473px;
+      left: 1108px;
+    }
+
+    .illustration .text-wrapper-2 {
+      position: absolute;
+      width: 313px;
+      top: 638px;
+      left: 20px;
+      font-family: "Cantora One-Regular", Helvetica;
+      font-weight: 400;
+      color: #fda959;
+      font-size: 128px;
+      letter-spacing: 0;
+      line-height: normal;
+      white-space: nowrap;
+    }
+
+    /*emoji section*/
+    .illustration .frame-2 {
+      gap: 29px;
+      top: 4892px;
+      left: 128px;
+      display: inline-flex;
+      align-items: center;
+      position: absolute;
+    }
+
+    .illustration .img-love {
+      position: relative;
+      width: 375px;
+      height: 375px;
+      object-fit: cover;
+    }
     
-  .links {
-    display: flex;
-    gap: 20px;
-    padding-right: 60px;
-  }
-
-  .links a {
-    font-family: "Cabin", sans-serif;
-    font-size: 18px;
-    color: white;
-    text-decoration: none;
-  }
-
-  .links a:hover {
-    color: #fda959;
-  }
- 
-  /*Footer*/
-.desktop .rectangle {
-  position: absolute;
-  width: 1582px;
-  height: 530px;
-  top: 3010px;
-  left: -45px;
-  background-color: #004759;
-}
+    .illustration .img-sus {
+      position: relative;
+      width: 375px;
+      height: 375px;
+      object-fit: cover;
+    }
     
-/*Top section*/
-.illustration .overlap {
-  position: absolute;
-  width: 1529px;
-  height: 805px;
-  top: 0;
-  left: 0;
-}
+    .illustration .img-shocked {
+      position: relative;
+      width: 375px;
+      height: 375px;
+      object-fit: cover;
+    }
 
-.illustration .frame {
-  gap: 36px;
-  top: 33px;
-  left: 798px;
-  display: inline-flex;
-  align-items: center;
-  position: absolute;
-}
+    .illustration .overlap-2 {
+      position: absolute;
+      width: 1505px;
+      height: 1766px;
+      top: 840px;
+      left: 177px;
+      background-color: #54aa9f;
+      border-radius: 500px 0px 0px 0px;
+    }
 
-.illustration .text-wrapper {
-  position: relative;
-  width: 172px;
-  height: 48px;
-  margin-top: -1.00px;
-  font-family: "Capriola-Regular", Helvetica;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 32px;
-  letter-spacing: 0;
-  line-height: normal;
-}
+    .illustration .IMG {
+      position: absolute;
+      width: 889px;
+      height: 1221px;
+      top: 506px;
+      left: 271px;
+      object-fit: cover;
+    }
 
-.illustration .text-wrapper-2 {
-  position: relative;
-  width: 143px;
-  height: 48px;
-  margin-top: -1.00px;
-  font-family: "Capriola-Regular", Helvetica;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 32px;
-  letter-spacing: 0;
-  line-height: normal;
-}
+    .illustration .text-wrapper-3 {
+      position: absolute;
+      width: 845px;
+      top: 40px;
+      left: 326px;
+      font-family: "Cantora One-Regular", Helvetica;
+      font-weight: 400;
+      color: #000000;
+      font-size: 96px;
+      text-align: right;
+      letter-spacing: 0;
+      line-height: normal;
+    }
 
-.illustration .text-wrapper-3 {
-  width: fit-content;
-  font-family: "Capriola-Regular", Helvetica;
-  color: #ffffff;
-  position: relative;
-  font-weight: 400;
-  font-size: 32px;
-  letter-spacing: 0;
-  line-height: normal;
-}
+    .illustration .p {
+      position: absolute;
+      width: 799px;
+      top: 183px;
+      left: 364px;
+      font-family: "Cabin-Regular", Helvetica;
+      font-weight: 400;
+      color: #000000;
+      font-size: 36px;
+      text-align: right;
+      letter-spacing: 0;
+      line-height: normal;
+    }
 
-.illustration .group {
-  position: absolute;
-  width: 1529px;
-  height: 683px;
-  top: 0;
-  left: 0;
-}
+    .illustration .overlap-3 {
+      position: absolute;
+      width: 1831px;
+      height: 1763px;
+      top: 2698px;
+      left: -398px;
+    }
 
-.illustration .overlap-group {
-  position: relative;
-  width: 1527px;
-  height: 683px;
-}
+    .illustration .star-2 {
+      position: absolute;
+      width: 193px;
+      height: 193px;
+      top: 13px;
+      left: 1638px;
+    }
 
-.illustration .rectangle {
-  position: absolute;
-  width: 1527px;
-  height: 613px;
-  top: 0;
-  left: 0;
-  background-color: #070d12;
-}
+    .illustration .rectangle-2 {
+      position: absolute;
+      width: 1746px;
+      height: 1763px;
+      top: 0;
+      left: 0;
+      background-color: #004759;
+      border-radius: 500px 0px 0px 0px;
+      transform: rotate(180deg);
+    }
 
-.illustration .text-wrapper-4 {
-  position: absolute;
-  width: 1440px;
-  top: 271px;
-  left: 0;
-  font-family: "Cantora One-Regular", Helvetica;
-  font-weight: 400;
-  font-size: 128px;
-  text-align: center;
-  color: #ffffff;
-  letter-spacing: 0;
-  line-height: normal;
-}
+    .illustration .IMG-2 {
+      position: absolute;
+      width: 861px;
+      height: 1102px;
+      top: 594px;
+      left: 490px;
+      object-fit: cover;
+    }
 
-.illustration .star {
-  position: absolute;
-  width: 332px;
-  height: 332px;
-  top: 473px;
-  left: 1108px;
-}
+    .illustration .text-wrapper-4 {
+      position: absolute;
+      width: 397px;
+      top: 66px;
+      left: 490px;
+      font-family: "Cantora One-Regular", Helvetica;
+      font-weight: 400;
+      color: #ffffff;
+      font-size: 96px;
+      letter-spacing: 0;
+      line-height: normal;
+    }
 
-.illustration .frame-2 {
-  gap: 17px;
-  top: 20px;
-  left: 797px;
-  display: inline-flex;
-  align-items: center;
-  position: absolute;
-}
+    .illustration .seven-deadly-sins-as {
+      position: absolute;
+      width: 853px;
+      top: 247px;
+      left: 498px;
+      font-family: "Cabin-SemiBold", Helvetica;
+      font-weight: 400;
+      color: #ffffff;
+      font-size: 36px;
+      letter-spacing: 0;
+      line-height: normal;
+    }
 
-.illustration .text-wrapper-5 {
-  position: relative;
-  width: 212px;
-  height: 68px;
-  margin-top: -1.00px;
-  font-family: "Cabin-Regular", Helvetica;
-  font-weight: 400;
-  color: #ffffffb0;
-  font-size: 32px;
-  letter-spacing: 0;
-  line-height: normal;
-}
+    .illustration .span {
+      font-weight: 600;
+    }
 
-.illustration .text-wrapper-6 {
-  position: relative;
-  width: 159px;
-  height: 68px;
-  margin-top: -1.00px;
-  font-family: "Cabin-Bold", Helvetica;
-  font-weight: 700;
-  font-size: 32px;
-  color: #ffffff;
-  letter-spacing: 0;
-  line-height: normal;
-}
+    .illustration .text-wrapper-5 {
+      font-family: "Cabin-Regular", Helvetica;
+    }
 
-.illustration .text-wrapper-7 {
-  width: 213px;
-  height: 68px;
-  margin-top: -1.00px;
-  font-family: "Cabin-Regular", Helvetica;
-  color: #ffffffb0;
-  position: relative;
-  font-weight: 400;
-  font-size: 32px;
-  letter-spacing: 0;
-  line-height: normal;
-}
+    .illustration .overlap-4 {
+      position: absolute;
+      width: 1440px;
+      height: 225px;
+      top: 4575px;
+      left: 15px;
+    }
 
-.illustration .group-2 {
-  position: absolute;
-  width: 386px;
-  height: 81px;
-  top: 20px;
-  left: 28px;
-}
+    .illustration .group-2 {
+      width: 1072px;
+      height: 187px;
+      left: 181px;
+      background-color: #fda959;
+      border-radius: 23px;
+      position: absolute;
+      top: 0;
+    }
 
-.illustration .text-wrapper-8 {
-  position: absolute;
-  width: 340px;
-  top: 0;
-  left: 44px;
-  font-family: "CantoraOne-Regular", Helvetica;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 48px;
-  letter-spacing: 0;
-  line-height: normal;
-}
+    .illustration .text-wrapper-6 {
+      position: absolute;
+      width: 1440px;
+      top: 29px;
+      left: 0;
+      font-family: "Cantora One-Regular", Helvetica;
+      font-weight: 400;
+      color: #000000;
+      font-size: 96px;
+      text-align: center;
+      letter-spacing: 0;
+      line-height: normal;
+    }
 
-.illustration .img {
-  position: absolute;
-  width: 44px;
-  height: 44px;
-  top: 4px;
-  left: 0;
-}
+    .illustration .rectangle-3 {
+      position: absolute;
+      width: 1582px;
+      height: 530px;
+      top: 5579px;
+      left: -71px;
+      background-color: #004759;
+    }
 
-.illustration .text-wrapper-9 {
-  position: absolute;
-  width: 313px;
-  top: 638px;
-  left: 20px;
-  font-family: "Cantora One-Regular", Helvetica;
-  font-weight: 400;
-  color: #fda959;
-  font-size: 128px;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
+    .illustration .text-wrapper-10 {
+      position: absolute;
+      width: 375px;
+      top: 5296px;
+      left: 128px;
+      font-family: "Cabin-Regular", Helvetica;
+      font-weight: 400;
+      color: #000000;
+      font-size: 36px;
+      text-align: center;
+      letter-spacing: 0;
+      line-height: normal;
+    }
 
-.illustration .frame-3 {
-  gap: 29px;
-  top: 5272px;
-  left: 54px;
-  display: inline-flex;
-  align-items: center;
-  position: absolute;
-}
+    .illustration .text-wrapper-11 {
+      position: absolute;
+      width: 375px;
+      top: 5292px;
+      left: 532px;
+      font-family: "Cabin-Regular", Helvetica;
+      font-weight: 400;
+      color: #000000;
+      font-size: 36px;
+      text-align: center;
+      letter-spacing: 0;
+      line-height: normal;
+    }
 
-.illustration .img-2 {
-  position: relative;
-  width: 435px;
-  height: 435px;
-  object-fit: cover;
-}
+    .illustration .text-wrapper-12 {
+      position: absolute;
+      width: 375px;
+      top: 5288px;
+      left: 936px;
+      font-family: "Cabin-Regular", Helvetica;
+      font-weight: 400;
+      color: #000000;
+      font-size: 36px;
+      text-align: center;
+      letter-spacing: 0;
+      line-height: normal;
+    }
+  </style>
 
-.illustration .overlap-2 {
-  position: absolute;
-  width: 1746px;
-  height: 1874px;
-  top: 892px;
-  left: 92px;
-  background-color: #54aa9f;
-  border-radius: 500px 0px 0px 0px;
-}
-
-.illustration .overlap-3 {
-  position: absolute;
-  width: 1036px;
-  height: 1576px;
-  top: 247px;
-  left: 225px;
-}
-
-.illustration .IMG {
-  position: absolute;
-  width: 1031px;
-  height: 1296px;
-  top: 280px;
-  left: 0;
-  object-fit: cover;
-}
-
-.illustration .p {
-  position: absolute;
-  width: 927px;
-  top: 0;
-  left: 109px;
-  font-family: "Cabin-Regular", Helvetica;
-  font-weight: 400;
-  color: #000000;
-  font-size: 40px;
-  text-align: right;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.illustration .text-wrapper-10 {
-  position: absolute;
-  width: 849px;
-  top: 42px;
-  left: 378px;
-  font-family: "Cantora One-Regular", Helvetica;
-  font-weight: 400;
-  color: #000000;
-  font-size: 128px;
-  text-align: right;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.illustration .overlap-4 {
-  position: absolute;
-  width: 1831px;
-  height: 1965px;
-  top: 2870px;
-  left: -398px;
-}
-
-.illustration .star-2 {
-  position: absolute;
-  width: 193px;
-  height: 193px;
-  top: 13px;
-  left: 1638px;
-}
-
-.illustration .rectangle-2 {
-  position: absolute;
-  width: 1746px;
-  height: 1965px;
-  top: 0;
-  left: 0;
-  background-color: #004759;
-  border-radius: 500px 0px 0px 0px;
-  transform: rotate(180deg);
-}
-
-.illustration .IMG-2 {
-  position: absolute;
-  width: 1032px;
-  height: 1321px;
-  top: 594px;
-  left: 490px;
-  object-fit: cover;
-}
-
-.illustration .text-wrapper-11 {
-  position: absolute;
-  width: 397px;
-  top: 66px;
-  left: 490px;
-  font-family: "Cantora One-Regular", Helvetica;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 128px;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.illustration .seven-deadly-sins-as {
-  position: absolute;
-  width: 853px;
-  top: 247px;
-  left: 498px;
-  font-family: "Cabin-SemiBold", Helvetica;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 40px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.illustration .span {
-  font-weight: 600;
-}
-
-.illustration .text-wrapper-12 {
-  font-family: "Cabin-Regular", Helvetica;
-}
-
-.illustration .overlap-5 {
-  position: absolute;
-  width: 1440px;
-  height: 226px;
-  top: 5004px;
-  left: 15px;
-}
-
-.illustration .group-3 {
-  position: absolute;
-  width: 1072px;
-  height: 226px;
-  top: 0;
-  left: 181px;
-  background-color: #fda959;
-  border-radius: 23px;
-}
-
-.illustration .text-wrapper-13 {
-  position: absolute;
-  width: 1440px;
-  top: 29px;
-  left: 0;
-  font-family: "Cantora One-Regular", Helvetica;
-  font-weight: 400;
-  color: #000000;
-  font-size: 128px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.illustration .rectangle-3 {
-  position: absolute;
-  width: 1582px;
-  height: 530px;
-  top: 6092px;
-  left: -71px;
-  background-color: #004759;
-}
-
-</style>
-  
   <body>
-<div class="illustration">
+    <div class="illustration">
       <div class="div">
-        <div class="overlap">
-          
+
           <div class="group">
             <div class="overlap-group">
               <div class="rectangle"></div>
-              <div class="text-wrapper-4">Illustration</div>
+              <div class="text-wrapper">Illustration</div>
             </div>
           </div>
-          <img class="star" src="img/star-2.svg" />
-          <div class="text-wrapper-9">02</div>
-        </div>
+        
+          <img class="star" src="Star 2 (1).png" alt="large orange star icon">
+          <div class="text-wrapper-2">02</div>
+        
+        
         <div class="overlap-2">
-          <div class="overlap-3">
-            <img class="IMG" src="IMG_7170 1.png" />
-            <p class="p">
-              I like to think that the majority of us all have something memorable from our childhood that we store in a
-              jar at the back of our heads as a safe keeping. For some we revisit the nostalgic feelings, but for others
-              we leave it to our imaginary spirits who keep them safe.
-            </p>
-          </div>
-          <div class="text-wrapper-10">Youthful Days</div>
-        </div>
-        <div class="overlap-4">
-          <img class="star-2" src="img/star-7.svg" />
-          <div class="rectangle-2"></div>
-          <img class="IMG-2" src="IMG_0277.JPG" />
-          <div class="text-wrapper-11">Lust</div>
-          <p class="seven-deadly-sins-as">
-            <span class="span">Seven Deadly Sins<br /></span>
-            <span class="text-wrapper-12"
-              >As the danger of lust can lead to dangerous or non-consensual situations. Human emotions can be
-              manipulated and taken advantage of because of the lack of morality of others. Like a lifeless puppet
-              attached to strings.</span
-            >
+          <img class="IMG" src="IMG_7170 1.png" alt="colourful illustration of spirit bears opening jar of childhood">
+          <div class="text-wrapper-3">Youthful Days</div>
+          <p class="p">
+            I like to think that the majority of us all have something memorable from our childhood that we store in a
+            jar at the back of our heads as a safe keeping. For some we revisit the nostalgic feelings, but for others
+            we leave it to our imaginary spirits who keep them safe.
           </p>
         </div>
-        <div class="overlap-5">
-          <div class="group-3"></div>
-          <div class="text-wrapper-13">Expressions of ME!</div>
+        
+        <div class="overlap-3">
+          <img class="star-2" src="Star 7.png" alt="small orange star icon">
+          <div class="rectangle-2"></div>
+          <img class="IMG-2" src="IMG_0277.JPG" alt="illustration depicting a motify of lust">
+          <div class="text-wrapper-4">Lust</div>
+          <p class="seven-deadly-sins-as">
+            <span class="span">Seven Deadly Sins<br/></span>
+            <span class="text-wrapper-5">As the danger of lust can lead to dangerous or non-consensual situations. Human emotions can be
+              manipulated and taken advantage of because of the lack of morality of others. Like a lifeless puppet
+              attached to strings.</span>
+          </p>
+        </div>
+        
+        <div class="overlap-4">
+          <div class="group-2"></div>
+          <div class="text-wrapper-6">Expressions of ME!</div>
+        </div>
+        
+        <div class="frame-2">
+          <img class="img-love" src="Emoji-_In_Love.png" alt="emoji depicting of me in love with bubble tea">
+          <img class="img-sus" src="IMG_0651.PNG" alt="emoji depicting of me a mastermind with suspicious ideas">
+          <img class="img-shocked" src="Emoji-_Shocked.png" alt="emoji depicting of me being shocked">
         </div>
         
         <div class="rectangle-3"></div>
-        <div class="frame-3">
-          <img class="img-2" src="Emoji-_In_Love.png" alt="illustration depicting inlove emotion">
-          <img class="img-2" src="IMG_0651.PNG" alt="illustration depicting suspicious emotion">
-          <img class="img-2" src="Emoji-_Shocked.png" alt="illustration depicting shocked emotion">
-        </div>
+        <div class="text-wrapper-10">Loving</div>
+        <div class="text-wrapper-11">Suspicious</div>
+        <div class="text-wrapper-12">Shocked</div>
+      </div>
+    </div>
+    
+    <!--Header-->
+    <div class="header">
+      <div class="name">
 
-        <!--Header-->
-          <div class="header">
-            <div class="name">
-              <img class="star" src="Star 1 (1).png" alt="Star Icon">Tiffany Lu
-            </div>
-            <div class="links">
-              <a href="/">Graphic Design</a>
-              <a href="/">Ilustration</a>
-              <a href="/">Photography</a>
-            </div>
-          </div>
+        <img class="star-icon" src="Star 1 (4).png" alt="Star Icon"><a href="https://t22lu.github.io/A3-mainpage/">Tiffany Lu</a>
 
+      </div>
+      <div class="links">
+        <a href="https://t22lu.github.io/A3-Graphic-Design/">Graphic Design</a>
+        <a href="/">Ilustration</a>
+        <a href="/">Photography</a>
       </div>
     </div>
 
   </body>
 </html>
-
